@@ -70,7 +70,8 @@ function my_custom_enter_title_here($title){
 add_filter('enter_title_here', 'my_custom_enter_title_here');
 
 
-function faq_shortcode( $atts, $content = null) {
+function faq_shortcode() {
+	ob_start();
   ?>
   <style type="text/css">
   	.faqAccordion { clear:both}
@@ -98,14 +99,7 @@ function faq_shortcode( $atts, $content = null) {
     });
 </script>
   <?php
-  extract( shortcode_atts( array(
-        'sort' => 'ASC'
-      ), $atts 
-    ) 
-  );
-  if($content==null || $content==''){
-    $content= 'No FAQs. Please add some FAQs';
-  }
+  
 // magic comes here
   $type = 'wp_faq';
   $args=array(
@@ -133,6 +127,9 @@ function faq_shortcode( $atts, $content = null) {
   </div>
   <?php
   wp_reset_query();  // Global Restore post data stomped by the_post ().
+  $html = ob_get_contents();
+  ob_end_clean();
+  return $html;
 }
 add_shortcode('wp_faq', 'faq_shortcode');
 ?>
