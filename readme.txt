@@ -24,6 +24,9 @@ You can download and install WP FAQ using the built in WordPress plugin installe
 
 Activate WP-FAQ in the "Plugins" admin panel using the "Activate" link.
 
+Add the shortcode [wp_faq] to the page.
+
+
 == Upgrade Notice ==
 
 Upgrade normally via your WordPress admin -> Plugins panel.
