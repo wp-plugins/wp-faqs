@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WP FAQs
- * Plugin URI: http://www.jayantisolanki.com/projects/plugins/wp-faqs.zip
+ * Plugin URI: https://wordpress.org/plugins/wp-faqs/
  * Description: WP FAQ provides an simple way to add FAQ to your website.
  * Version: 1.1
  * Author: Jayanti Solanki
