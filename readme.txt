@@ -1,6 +1,6 @@
 === WP FAQ ===
-Contributors: Jayanti Solanki
-Tags: WP FAQ, faq, toggle, Accordian, Sample Faqs
+Contributors: jayantisolanki
+Tags: WP FAQ, faq, toggle, Accordian faqs, simple faqs
 Requires at least: 3.8
 Tested up to: 4.0
 Stable tag: 4.3
